@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./product.css">
+    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="/index.html">TR.Shop</a>
+                </div>
+                <div class="nav-input">
+                    <input type="text" placeholder="search product ..."><button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="menu-bars" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="register" id="register">
+                    <div class="menu-times"><i class="fas fa-times" onclick="closeMenu()"></i></div>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="/cart.html"><i class="fas fa-shopping-cart"></i></a><span id="productincart">0</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="productdetail">
+        <div class="container">
+            <div class="product-box">
+                <div class="product-left">
+                    <div class="product-img" id="product-img">
+                        <!-- <img src="https://cdn.pixabay.com/photo/2016/11/30/12/29/bicycle-1872682_1280.jpg" alt=""> -->
+                    </div>
+                </div>
+                <div class="product-right">
+                    <div class="title" id="title">
+                        <!-- <h1>MoterBike</h1> -->
+                    </div>
+                    <div class="description" id="description">
+                        <!-- <h3>Description</h3> -->
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, tenetur.</p> -->
+                    </div>
+                    <div class="price" id="price">
+                        <!-- <h3>Price :</h3> -->
+                        <!-- <span> 20$</span> -->
+                    </div>
+                    <div id="idproduct">
+                        <p></p>
+                    </div>
+                    <div class="delivery">
+                        <h3>Delivery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="piece">
+                        <h3>Piece</h3><input type="number" value="1" min="1" id="datapiece"> 
+                        <!-- <h5>กดเยอะเกินไปมีตังจ่ายป่าว</h5> -->
+                    </div>
+                    <div class="addcart" id="addcart">
+                        <a onclick="addtoCart()"><i class="fas fa-cart-plus"></i> Add to Cart</a>
+                        <a href="/cart.html"><i class="fas fa-money-bill-wave-alt"></i> Buy</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Ask More</h3>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="content">
+                    <a href="">TR.Shop</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quidem!</p>
+                </div>
+                <div class="info">
+                    <h3>Contact Us</h3>
+                    <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href=""><i class="fab fa-youtube"></i>Youtube</a>
+                    <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
+                    <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
+                </div>
+                <ul class="menu">
+                    <h3>Menu</h3>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2021 © Rittidej Wongpiya. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>

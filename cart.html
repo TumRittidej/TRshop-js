@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+    <script src="https://kit.fontawesome.com/cf2146b72f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="/index.html">TR.Shop</a>
+                </div>
+                <div class="nav-input">
+                    <input type="text" placeholder="search product ..."><button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="menu-bars" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="register" id="register">
+                    <div class="menu-times"><i class="fas fa-times" onclick="closeMenu()"></i></div>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="/cart.html"><i class="fas fa-shopping-cart"></i></a><span id="productincart">0</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="cartedit">
+        <div class="container">
+            <h1>" Products In Cart "</h1>
+            <h1 id="showempty"><i class="fas fa-shopping-cart"></i> Cart is Empty! Please Select Product.</h1>
+            <div class="cartedit-box" id="cartedit-box">
+                <!-- <div class="cartedit-item" id="cartedit-item">
+                    <i class="fas fa-times-circle"></i>
+                    <div class="cartedit-img" id="cartedit-img">
+                        <h3>Product</h3>
+                        <img src="https://cdn.pixabay.com/photo/2020/09/03/03/43/abstract-5540113_1280.png" alt="">
+                    </div>
+                    <div class="cartedit-title" id="cartedit-title">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="cartedit-price" id="cartedit-price">
+                        <h3>Price/Piece</h3>
+                        <p>30$</p>
+                    </div>
+                    <div class="cartedit-piece" id="cartedit-piece">
+                        <h3>Piece</h3>
+                        <input type="number" value="1" min="0">
+                    </div>
+                    <div class="cartedit-total">
+                        <h3>Total Piece</h3>
+                        <span>90$</span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="orderproduct-box" id="orderproduct-box">
+                <p>Total :</p>
+                <span id="totalorderprice">0.00</span><p>$</p>
+                <a onclick="clearProductList()">Order</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="content">
+                    <a href="">TR.Shop</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quidem!</p>
+                </div>
+                <div class="info">
+                    <h3>Contact Us</h3>
+                    <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href=""><i class="fab fa-youtube"></i>Youtube</a>
+                    <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
+                    <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
+                </div>
+                <ul class="menu">
+                    <h3>Menu</h3>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2021 © Rittidej Wongpiya. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./cart.js"></script>
+</body>
+</html>
